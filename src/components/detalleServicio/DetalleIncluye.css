@@ -10,13 +10,13 @@
 .detalle-incluye-titulo {
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 0.6rem;
+  margin-block-end: 0.6rem;
 }
 
 .detalle-incluye-descripcion {
   color: #6b615b;
   font-size: 0.95rem;
-  margin-bottom: 1.2rem;
+  margin-block-end: 1.2rem;
   line-height: 1.5;
 }
 
@@ -48,7 +48,7 @@
 .chip-label {
   font-size: 0.8rem;
   color: #8b7f77;
-  margin-bottom: 0.25rem;
+  margin-block-end: 0.25rem;
 }
 
 .chip-value {
