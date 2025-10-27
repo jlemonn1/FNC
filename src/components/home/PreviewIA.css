@@ -1,0 +1,105 @@
+.previewIA-section {
+  background: #f5efe8;
+  border-radius: 28px;
+  padding: 0.5rem 1.5rem;
+  color: #2e2a27;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ia-texto h2 {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.ia-texto p {
+  color: #6b615b;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.btn-ia {
+  display: inline-block;
+  background: #8b5e3b;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+.btn-ia:hover {
+  background: #744d32;
+  transform: translateY(-2px);
+}
+
+/* --- SLIDER --- */
+.ia-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: ew-resize;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.ia-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* overlay que recorta la mitad visible */
+.ia-overlay {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  transition: clip-path 0.1s ease;
+}
+
+/* línea divisora */
+.ia-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  transform: translateX(-1px);
+  cursor: grab;
+}
+
+/* el “agarre” circular */
+.ia-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border: 3px solid #c76a3e;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.ia-divider:active .ia-handle {
+  background: #c76a3e;
+  border-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .ia-slider-container {
+    max-width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+}

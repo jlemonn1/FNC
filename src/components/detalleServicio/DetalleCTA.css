@@ -1,0 +1,64 @@
+.detalle-cta {
+  background-color: #f5efe8;
+  border-radius: 0 0 28px 28px;
+  padding: 2.5rem 1.5rem 3rem;
+  text-align: center;
+  color: #2e2a27;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  margin: 1.5rem 1rem 90px; /* espacio para la navbar inferior */
+}
+
+.detalle-cta-titulo {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.detalle-cta-subtitulo {
+  color: #6b615b;
+  font-size: 1rem;
+  margin-bottom: 1.8rem;
+  line-height: 1.4;
+}
+
+/* --- BOTÓN WHATSAPP --- */
+.btn-whatsapp-detalle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #c76a3e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-whatsapp-detalle:hover {
+  background-color: #b45932;
+  transform: translateY(-2px);
+}
+
+/* 💫 Animación sutil de pulso */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.btn-whatsapp-detalle {
+  animation: pulse 3s infinite ease-in-out;
+}
+
+@media (max-width: 600px) {
+  .detalle-cta {
+    padding: 2rem 1rem 4rem;
+  }
+}

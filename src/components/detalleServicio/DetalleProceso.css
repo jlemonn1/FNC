@@ -1,0 +1,80 @@
+.detalle-proceso {
+  background-color: #fdf8f3;
+  border-radius: 20px;
+  padding: 1.8rem 1.4rem;
+  margin: 1.5rem 1rem;
+  color: #2e2a27;
+}
+
+.detalle-proceso-titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Lista de pasos */
+.detalle-proceso-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Tarjeta de paso */
+.detalle-paso {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1rem 1rem 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #c76a3e;
+  transition: transform 0.25s ease;
+}
+
+.detalle-paso:hover {
+  transform: translateY(-2px);
+}
+
+/* Cabecera */
+.detalle-paso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.detalle-paso-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.detalle-paso-icono {
+  font-size: 1.1rem;
+}
+
+/* Etiqueta "Incluido" */
+.detalle-paso-tag {
+  background-color: #f5efe8;
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2e2a27;
+  border: 1px solid #e1d8ce;
+}
+
+/* Descripción */
+.detalle-paso-descripcion {
+  font-size: 0.9rem;
+  color: #6b615b;
+  line-height: 1.45;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .detalle-proceso {
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+  }
+}

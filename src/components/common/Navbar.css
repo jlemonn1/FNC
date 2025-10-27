@@ -1,0 +1,75 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 68px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  z-index: 50;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.nav-item {
+  color: #9c8c7f;
+  text-decoration: none;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+  position: relative;
+}
+
+.nav-icon {
+  font-size: 1.4rem;
+}
+
+/* 🔸 Línea entre icono y texto */
+.nav-indicator {
+  width: 24px;
+  height: 2.5px;
+  margin: 4px 0 3px;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Estado activo */
+.nav-item.active,
+.nav-item[aria-current="page"] {
+  color: #c76a3e;
+  font-weight: 600;
+}
+
+.nav-item.active .nav-indicator,
+.nav-item[aria-current="page"] .nav-indicator {
+  background-color: #c76a3e;
+  transform: scaleX(1);
+}
+
+/* Estado inactivo */
+.nav-item .nav-indicator {
+  transform: scaleX(0);
+  background-color: transparent;
+}
+
+/* Hover feedback */
+.nav-item:hover {
+  color: #c76a3e;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 72px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px 12px 0 0;
+  }
+}

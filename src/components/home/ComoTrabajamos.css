@@ -1,0 +1,101 @@
+.como-trabajamos {
+  background-color: #f5efe8;
+  border-radius: 28px;
+  padding: 0.75rem 0rem;
+  text-align: center;
+  color: #2e2a27;
+
+  margin: 2rem 0;
+}
+
+.como-title {
+  color: #c76a3e;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  margin-bottom: 0.75rem;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.7s ease forwards;
+  animation-delay: 0.1s;
+  padding-left: 1.5rem;
+}
+
+.como-subtitle {
+  font-size: 1rem;
+  color: #6b615b;
+  margin-bottom: 2rem;
+}
+
+/* GRID DE PASOS */
+.pasos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  justify-content: center;
+}
+
+.paso-card {
+  flex: 1 1 120px;
+  min-width: 120px;
+  max-width: 160px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.paso-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.paso-icon {
+  color: #c76a3e;
+  margin-bottom: 0.6rem;
+}
+
+.paso-titulo {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+.paso-desc {
+  font-size: 0.85rem;
+  color: #6b615b;
+  margin: 0;
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: #25d366;
+  color: white;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebd59;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .pasos-grid {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .paso-card {
+    flex: 0 0 130px;
+    scroll-snap-align: start;
+  }
+}

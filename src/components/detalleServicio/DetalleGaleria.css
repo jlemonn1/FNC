@@ -1,0 +1,61 @@
+.detalle-galeria {
+  background-color: #fdf8f3;
+  border-radius: 20px;
+  padding: 1.8rem 1.4rem 1.6rem;
+  margin: 1.5rem 1rem 2rem;
+  color: #2e2a27;
+}
+
+.detalle-galeria-titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Contenedor scroll */
+.galeria-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 0.4rem;
+}
+
+/* Oculta scrollbar en la mayoría de navegadores */
+.galeria-scroll::-webkit-scrollbar {
+  display: none;
+}
+.galeria-scroll {
+  scrollbar-width: none;
+}
+
+/* Tarjeta individual */
+.galeria-item {
+  flex: 0 0 75%;
+  max-width: 400px;
+  scroll-snap-align: start;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.25s ease;
+}
+
+.galeria-item:hover {
+  transform: translateY(-4px);
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive ajustes */
+@media (min-width: 768px) {
+  .galeria-item {
+    flex: 0 0 30%;
+  }
+}

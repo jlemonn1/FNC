@@ -1,0 +1,52 @@
+/* Global styles */
+/* 🔹 Reset general para eliminar márgenes y bordes */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+main {
+  padding-bottom: 90px; /* altura del navbar + margen de aire */
+}
+
+/* 🔹 El body se usa como contenedor global de la app */
+body {
+  font-family: "Inter", "Poppins", sans-serif;
+  background-color: #f5efe8; /* color base de fondo cálido */
+  color: #2e2a27;            /* texto principal */
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;        /* evita scroll horizontal */
+}
+
+/* 🔹 Asegura que todos los elementos se ajusten sin romper layout */
+* {
+  box-sizing: border-box;
+}
+
+/* 🔹 Enlaces base */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 🔹 Quita resaltado azul en móviles */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 🔹 Layout general SPA */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* 🔹 Suaviza desplazamiento entre secciones */
+html {
+  scroll-behavior: smooth;
+}

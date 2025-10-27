@@ -1,0 +1,123 @@
+.preview-servicios {
+  background-color: #f5efe8;
+  padding: 1rem 1.5rem;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+
+.preview-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #c76a3e;
+  font-weight: 700;
+}
+
+.preview-ver-todos {
+  font-size: 0.95rem;
+  color: #c76a3e;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.preview-ver-todos:hover {
+  opacity: 0.7;
+}
+
+/* Grid */
+.servicios-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* --- Animación scroll reveal --- */
+.servicio-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+
+  opacity: 0;
+  transform: translateY(40px);
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.servicio-card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover */
+.servicio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-image-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.servicio-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.servicio-card:hover .servicio-image {
+  transform: scale(1.07);
+}
+
+/* Text Info */
+.servicio-info {
+  padding: 0rem 0.5rem 0.8rem 0.5rem;
+}
+
+.servicio-tag {
+  display: inline-block;
+  background-color: #f5efe8;
+  color: #c76a3e;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.servicio-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2e2a27;
+  margin-bottom: 0.3rem;
+}
+
+.servicio-description {
+  font-size: 0.95rem;
+  color: #4a423d;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .servicios-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .preview-servicios {
+    padding: 4rem 3rem;
+  }
+}
