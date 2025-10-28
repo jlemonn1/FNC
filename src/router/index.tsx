@@ -10,6 +10,7 @@ import { DetalleServicio } from "../pages/DetalleServicio";
 
 export const AppRouter = () => {
   return (
+    
     <Routes>
       {/* 🏠 Página principal */}
       <Route path="/" element={<Home />} />

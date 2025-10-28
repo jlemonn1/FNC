@@ -1,6 +1,6 @@
 // Bottom navigation bar
-import { NavLink } from "react-router-dom";
-import { Home, Hammer, Sparkles } from "lucide-react"; // iconos de lucide-react
+import { NavLink, useNavigate } from "react-router-dom";
+import { Home, Hammer, Sparkles } from "lucide-react";
 import "./Navbar.css";
 import type { JSX } from "react";
 
@@ -18,12 +18,18 @@ export const Navbar = () => {
     { id: "studioIA", label: "Studio IA", icon: <Sparkles size={22} />, path: "/studio-ia" },
   ];
 
+  // 👇 función para subir arriba de todo
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <nav className="navbar">
       {navItems.map((item) => (
         <NavLink
           key={item.id}
           to={item.path}
+          onClick={scrollToTop} // ✅ aquí sube arriba al hacer click
           className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
           aria-label={`Ir a ${item.label}`}
         >
