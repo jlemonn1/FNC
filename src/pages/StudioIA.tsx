@@ -62,7 +62,7 @@ export default function StudioIA() {
                 flexDirection: "column",
                 alignItems: "center",
                 gap: "2rem",
-                padding: "2rem 1rem 6rem",
+                padding: "2rem 1rem 10rem",
             }}
         >
             {/* CTA + selector de negocio */}
@@ -83,7 +83,7 @@ export default function StudioIA() {
 
             {/* Resultado */}
             {result && (
-                <div style={{ marginTop: "2rem", textAlign: "center" }}>
+                <div style={{ marginTop: "2rem",marginBottom: "8rem", textAlign: "center" }}>
                     <h3 style={{ color: "#3a2b22", marginBottom: "1rem" }}>
                         Resultado generado por IA
                     </h3>
