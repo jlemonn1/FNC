@@ -59,12 +59,15 @@
 }
 
 /* overlay que recorta la mitad visible */
+/* Quitar transición del overlay */
 .ia-overlay {
   position: absolute;
   inset: 0;
   overflow: hidden;
-  transition: clip-path 0.1s ease;
+  /* ❌ quita esta línea para hacerlo más responsivo al movimiento */
+  /* transition: clip-path 0.1s ease; */
 }
+
 
 /* línea divisora */
 .ia-divider {

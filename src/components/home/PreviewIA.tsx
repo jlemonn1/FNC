@@ -1,18 +1,26 @@
-// IA preview block
 import { useRef, useState, useEffect } from "react";
 import "./PreviewIA.css";
 
 export const PreviewIA = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [sliderPos, setSliderPos] = useState(50);
+  const [targetPos, setTargetPos] = useState(50);
   const [dragging, setDragging] = useState(false);
+
+  // Movimiento con suavizado (interpolación ligera)
+  useEffect(() => {
+    const smooth = setInterval(() => {
+      setSliderPos((prev) => prev + (targetPos - prev) * 0.15); // ← suaviza el cambio
+    }, 16); // ~60fps
+    return () => clearInterval(smooth);
+  }, [targetPos]);
 
   const handleMove = (e: MouseEvent | TouchEvent) => {
     if (!dragging || !containerRef.current) return;
     const rect = containerRef.current.getBoundingClientRect();
     const x = "touches" in e ? e.touches[0].clientX : e.clientX;
     const newPos = ((x - rect.left) / rect.width) * 100;
-    setSliderPos(Math.min(100, Math.max(0, newPos)));
+    setTargetPos(Math.min(100, Math.max(0, newPos)));
   };
 
   useEffect(() => {
@@ -37,7 +45,6 @@ export const PreviewIA = () => {
           Visualiza colores y acabados antes de decidirte.  
           Sube una foto y explora opciones.
         </p>
-        
       </div>
 
       <div
@@ -47,7 +54,7 @@ export const PreviewIA = () => {
         onTouchStart={() => setDragging(true)}
       >
         <img
-          src="/assets/images/ia/despues.jpg"
+          src="/images/ia/despues.png"
           className="ia-img"
           alt="Resultado IA"
         />
@@ -56,7 +63,7 @@ export const PreviewIA = () => {
           style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
         >
           <img
-            src="/assets/images/ia/antes.jpg"
+            src="/images/ia/antes.png"
             className="ia-img"
             alt="Foto original"
           />
@@ -67,9 +74,8 @@ export const PreviewIA = () => {
         >
           <div className="ia-handle" />
         </div>
-
-        
       </div>
+
       <a href="/studio-ia" className="btn-ia">Abrir Studio IA</a>
     </section>
   );

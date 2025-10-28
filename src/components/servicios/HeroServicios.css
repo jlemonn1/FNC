@@ -1,7 +1,11 @@
+
+
+
+
 .hero-servicios {
   position: relative;
-  height: 60vh;
-  min-height: 380px;
+  height: 70vh;
+  min-height: 420px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -11,18 +15,27 @@
   justify-content: center;
   color: #fff;
   overflow: hidden;
-}
 
-/* 🔸 Reutiliza el mismo overlay del Hero original */
-.hero-servicios .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 1;
+  /* ✅ Aquí redondeas la propia imagen */
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  backdrop-filter: saturate(180%) blur(20px);
 }
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 1;
+
+  /* ✅ Blur más ligero */
+  backdrop-filter: saturate(160%) blur(1px);
+
+  /* ✅ Redondeado también por si hay overflow */
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+
 
 /* Contenido */
 .hero-servicios .hero-content {

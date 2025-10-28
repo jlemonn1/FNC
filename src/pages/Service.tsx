@@ -1,6 +1,6 @@
 // Services page
 import { Navbar } from "../components/common/Navbar";
-import { ContactoResumen } from "../components/home/ContactoResumen";
+import { ContactoResumen } from "../components/common/ContactoResumen";
 import { OpinionesPreview } from "../components/common/OpinionesPreview";
 import { CategoriaServicio } from "../components/servicios/CategoriaServicio";
 import { HeroServicios } from "../components/servicios/HeroServicios";
@@ -15,7 +15,7 @@ export const Service = () => {
       <CategoriaServicio
         titulo="Pintura profesional"
         descripcion="Aplicamos pintura plástica, esmaltes y efectos decorativos tanto en interiores como exteriores. Eliminamos gotelé y protegemos cada detalle para un acabado duradero."
-        imagen="/assets/servicios/pintura/cover.jpg"
+        imagen="/images/servicios/pintura/cover.png"
         subcategorias={[
           {
             id: "int",
@@ -52,7 +52,7 @@ export const Service = () => {
       <CategoriaServicio
         titulo="Montaje y Carpintería"
         descripcion="Diseñamos, fabricamos e instalamos muebles, puertas y soluciones de almacenamiento. Trabajamos con materiales de primera y cuidamos cada detalle."
-        imagen="/assets/servicios/carpinteria/cover.jpg"
+        imagen="/images/servicios/carpinteria/cover.png"
         subcategorias={[
           {
             id: "fab",
@@ -89,7 +89,7 @@ export const Service = () => {
       <CategoriaServicio
         titulo="Reparación de paredes y techos"
         descripcion="Reparamos grietas, fisuras y humedades, devolviendo a tus paredes su aspecto original con terminación pareja y duradera."
-        imagen="/assets/servicios/reparaciones/cover.jpg"
+        imagen="/images/servicios/reparaciones/cover.png"
         subcategorias={[
           {
             id: "gri",

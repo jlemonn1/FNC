@@ -20,7 +20,7 @@ export const PreviewServicios = () => {
       title: "Pintura",
       description:
         "Interiores y exteriores con acabados finos, protección y color duradero.",
-      image: "/assets/images/servicios/pintura-cover.jpg",
+      image: "/images/servicios/pintura-cover.png", // ✅ desde public/images
       tag: "Calidad",
       href: "/servicios#pintura",
     },
@@ -29,7 +29,7 @@ export const PreviewServicios = () => {
       title: "Carpintería",
       description:
         "Muebles a medida, instalación y restauración con toque artesanal.",
-      image: "/assets/images/servicios/carpinteria-cover.jpg",
+      image: "/images/servicios/carpinteria-cover.png", // ✅ nueva imagen generada
       tag: "Precisión",
       href: "/servicios#carpinteria",
     },
@@ -38,7 +38,7 @@ export const PreviewServicios = () => {
       title: "Reparaciones",
       description:
         "Grietas, humedades y soluciones rápidas con terminación prolija.",
-      image: "/assets/images/servicios/reparaciones-cover.jpg",
+      image: "/images/servicios/reparaciones-cover.png", // ✅ desde public/images
       tag: "Profesional",
       href: "/servicios#reparacion",
     },
@@ -46,8 +46,8 @@ export const PreviewServicios = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
+      (entries) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
             observer.unobserve(entry.target);
@@ -57,7 +57,7 @@ export const PreviewServicios = () => {
       { threshold: 0.2 }
     );
 
-    servicesRef.current.forEach(card => {
+    servicesRef.current.forEach((card) => {
       if (card) observer.observe(card);
     });
 
@@ -67,7 +67,9 @@ export const PreviewServicios = () => {
   return (
     <section className="preview-servicios" aria-labelledby="servicios-title">
       <div className="preview-header">
-        <h2 id="servicios-title" className="preview-title">Servicios</h2>
+        <h2 id="servicios-title" className="preview-title">
+          Servicios
+        </h2>
         <a href="/servicios" className="preview-ver-todos">
           Ver todos
         </a>
@@ -83,7 +85,7 @@ export const PreviewServicios = () => {
             ref={(el) => {
               if (el) {
                 servicesRef.current[i] = el;
-                el.style.setProperty("--delay", `${i * 0.12}s`); // stagger
+                el.style.setProperty("--delay", `${i * 0.12}s`); // animación escalonada
               }
             }}
           >

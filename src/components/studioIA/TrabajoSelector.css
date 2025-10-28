@@ -1,0 +1,162 @@
+/* === SECCIÓN OPCIONES === */
+.ts__title {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3a2d23;
+  text-align: center;
+}
+
+.ts__options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.2rem;
+  align-items: center;
+}
+
+/* Card base */
+.ts__card {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.ts__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Icono */
+.ts__icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* Texto */
+.ts__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.ts__text strong {
+  font-size: 1.05rem;
+  color: #3b2f26;
+}
+
+.ts__text small {
+  font-size: 0.85rem;
+  color: #7a6e64;
+  margin-top: 0.15rem;
+}
+
+/* Estado activo */
+.ts__card.is-active {
+  border-color: #c47a49;
+  background: linear-gradient(180deg, #fff9f5, #fff3ea);
+  box-shadow: 0 0 0 3px rgba(196, 122, 73, 0.15),
+              0 6px 18px rgba(196, 122, 73, 0.25);
+  transform: translateY(-2px);
+}
+
+.ts__card.is-active .ts__icon {
+  filter: drop-shadow(0 0 4px rgba(196, 122, 73, 0.4));
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .ts__options {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+
+/* === CTA DE ENTRADA (refinado, estilo IA 2025) === */
+.ts__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 720px;
+  padding: 1rem 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #fff, #fff8f5);
+  box-shadow: 0 4px 16px rgba(122,81,51,0.08);
+  transition: transform 0.3s ease;
+}
+
+.ts__intro:hover {
+  transform: translateY(-2px);
+}
+
+.ts__headline {
+  font-size: 2rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7a5133 0%, #c47a49 50%, #f1a45a 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+
+.ts__tagline {
+  font-size: 1rem;
+  color: #5c534a;
+  max-width: 580px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+/* CTA button */
+.ts__cta-entry {
+  position: relative;
+  margin-top: 0.5rem;
+  border: none;
+  padding: 0.9rem 2.6rem;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #7a5133 0%, #c47a49 50%, #f1a45a 100%);
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(241,164,90,0.25);
+}
+
+.ts__cta-entry:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(241,164,90,0.45);
+}
+
+.ts__cta-entry span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Efecto glow dinámico */
+.ts__cta-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(255, 255, 255, 0.45),
+    transparent 70%
+  );
+  animation: pulseGlow 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}

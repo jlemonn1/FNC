@@ -11,24 +11,24 @@ export const OpinionesPreview = () => {
   const opiniones: Opinion[] = [
     {
       nombre: "María R.",
-      foto: "/assets/images/opiniones/maria.jpg",
+      foto: "/images/opiniones/1.jpg",
       texto:
         "Excelente trabajo, muy prolijos. El living quedó como nuevo y cumplieron los plazos.",
       estrellas: 5,
     },
     {
       nombre: "Javier M.",
-      foto: "/assets/images/opiniones/javier.jpg",
+      foto: "/images/opiniones/2.jpg",
       texto:
         "Paredes reparadas y pintadas con mucha dedicación. Muy buena atención y carpintería impecable.",
       estrellas: 5,
     },
     {
       nombre: "Laura P.",
-      foto: "/assets/images/opiniones/laura.jpg",
+      foto: "/images/opiniones/3.jpg",
       texto:
         "Profesionales y detallistas. Los llamaría nuevamente sin dudarlo.",
-      estrellas: 5,
+      estrellas: 4,
     },
   ];
 

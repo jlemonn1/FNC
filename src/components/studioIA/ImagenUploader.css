@@ -1,0 +1,57 @@
+.iu {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+  border: 2px dashed #d8cfc5;
+  border-radius: 20px;
+  background: #fffdfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.iu:hover {
+  border-color: #7a5133;
+  box-shadow: 0 4px 10px rgba(122,81,51,0.1);
+}
+
+.iu__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  color: #7a746e;
+  padding: 1rem;
+}
+
+.iu__icon {
+  font-size: 2rem;
+  color: #7a5133;
+}
+
+.iu__text {
+  font-size: 0.95rem;
+  max-width: 70%;
+}
+
+.iu__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.iu__img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 720px) {
+  .iu {
+    aspect-ratio: 4/3;
+  }
+}

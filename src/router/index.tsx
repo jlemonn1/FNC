@@ -1,6 +1,7 @@
 // React Router configuration placeholder
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "../pages/Home";
+import  StudioIA  from "../pages/StudioIA";
 import { Service } from "../pages/Service";
 import { DetalleServicio } from "../pages/DetalleServicio";
 // puedes añadir más páginas aquí:
@@ -23,6 +24,8 @@ export const AppRouter = () => {
       <Route path="*" element={<Navigate to="/" replace />} />
 
       <Route path="/servicios/:categoria/:subcategoria" element={<DetalleServicio />} />
+
+      <Route path="/studio-ia" element={<StudioIA />} />
 
     </Routes>
   );

@@ -2,7 +2,7 @@
 import { Navbar } from "../components/common/Navbar";
 import { AboutSection } from "../components/home/AboutSection";
 import { ComoTrabajamos } from "../components/home/ComoTrabajamos";
-import { ContactoResumen } from "../components/home/ContactoResumen";
+import { ContactoResumen } from "../components/common/ContactoResumen";
 import { HeroCTA } from "../components/home/HeroCTA";
 import { OpinionesPreview } from "../components/common/OpinionesPreview";
 import { PreviewIA } from "../components/home/PreviewIA";

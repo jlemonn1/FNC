@@ -13,7 +13,7 @@ export const HeroServicios = ({
   title = "Nuestros Servicios",
   subtitle = "Soluciones integrales en pintura, carpintería y reparaciones.",
   tagline = "Profesionalismo, garantía y acabados impecables.",
-  backgroundSrc = "/assets/images/hero/servicios-hero.jpg",
+  backgroundSrc = "/images/hero/servicios-hero.png",
   primaryCta = {
     label: "Solicitar presupuesto",
     href: "https://wa.me/34600123456?text=Hola!%20Quiero%20un%20presupuesto",

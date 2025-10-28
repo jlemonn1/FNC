@@ -1,0 +1,68 @@
+.gb {
+  position: relative;
+  border: none;
+  border-radius: 14px;
+  font-weight: 600;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #7a5133 0%, #c47a49 50%, #f1a45a 100%);
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 1rem 2.4rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(241,164,90,0.25);
+}
+
+.gb:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(241,164,90,0.45);
+}
+
+.gb__glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.4), transparent 70%);
+  animation: gbGlow 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.gb span,
+.gb__spinner {
+  position: relative;
+  z-index: 2;
+}
+
+/* Spinner IA */
+.gb__spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.gb__dot {
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  animation: gbDot 1.2s infinite ease-in-out;
+}
+
+.gb__dot:nth-child(2) { animation-delay: 0.2s; }
+.gb__dot:nth-child(3) { animation-delay: 0.4s; }
+
+.is-loading {
+  opacity: 0.9;
+  cursor: default;
+}
+
+@keyframes gbGlow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes gbDot {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1); }
+}
