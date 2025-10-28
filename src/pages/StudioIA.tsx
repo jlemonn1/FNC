@@ -31,7 +31,7 @@ export default function StudioIA() {
                 // categoria: mode,
             };
 
-            const res = await fetch("http://localhost:3000/api/ai/generate", {
+            const res = await fetch("https://fnc-serverless.vercel.app/api/ai", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body),
