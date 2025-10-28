@@ -72,11 +72,11 @@ export default function StudioIA() {
                 onContinue={() => console.log("Entrando al generador IA...")}
             />
 
-            {/* Prompt */}
-            <IdeaPrompt prompt={prompt} onChange={setPrompt} />
-
             {/* Uploader (opcional) */}
             <ImagenUploader onImageSelected={setImage} />
+
+            {/* Prompt */}
+            <IdeaPrompt prompt={prompt} onChange={setPrompt} />
 
             {/* Botón principal */}
             <GenerarBoton loading={loading} onClick={handleGenerate} />
