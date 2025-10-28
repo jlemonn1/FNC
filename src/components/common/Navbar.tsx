@@ -1,5 +1,5 @@
-// Bottom navigation bar
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { Home, Hammer, Sparkles } from "lucide-react";
 import "./Navbar.css";
 import type { JSX } from "react";
@@ -18,26 +18,41 @@ export const Navbar = () => {
     { id: "studioIA", label: "Studio IA", icon: <Sparkles size={22} />, path: "/studio-ia" },
   ];
 
-  // 👇 función para subir arriba de todo
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+
+  // 👇 Subir arriba cada vez que cambia la ruta
+  useEffect(() => {
+    scrollToTop();
+  }, [pathname]);
+
+  // 👇 Función más robusta para subir arriba
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    // soporta todos los navegadores
+    document.body.scrollTop = 0; // Safari
+    document.documentElement.scrollTop = 0; // Chrome, Firefox, Edge
+  };
+
+  // 👇 Clic en icono: siempre sube arriba y navega
+  const handleNavClick = (path: string) => {
+    console.log("AQUI"); // se verá SIEMPRE
+    scrollToTop();
+    navigate(path);
   };
 
   return (
     <nav className="navbar">
       {navItems.map((item) => (
-        <NavLink
+        <div
           key={item.id}
-          to={item.path}
-          onClick={scrollToTop} // ✅ aquí sube arriba al hacer click
-          className={({ isActive }) => `nav-item ${isActive ? "active" : ""}`}
+          className={`nav-item ${pathname === item.path ? "active" : ""}`}
+          onClick={() => handleNavClick(item.path)}
           aria-label={`Ir a ${item.label}`}
         >
           <div className="nav-icon">{item.icon}</div>
-          {/* Indicador entre icono y texto */}
           <div className="nav-indicator" />
           <span className="nav-label">{item.label}</span>
-        </NavLink>
+        </div>
       ))}
     </nav>
   );
