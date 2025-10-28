@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import { Home, Hammer, Sparkles } from "lucide-react";
 import "./Navbar.css";
@@ -21,21 +21,29 @@ export const Navbar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
-  // 👇 Subir arriba cada vez que cambia la ruta
+  // 🔹 Función universal para subir arriba en cualquier layout
+  const scrollToTop = () => {
+    // 1️⃣ Intenta hacer scroll en window
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // 2️⃣ Fuerza scroll en document (por compatibilidad)
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    // 3️⃣ Busca cualquier contenedor que esté scrolleando
+    const scrollable = Array.from(document.querySelectorAll("*")).find(
+      (el) => el.scrollHeight > el.clientHeight && getComputedStyle(el).overflowY !== "visible"
+    );
+    if (scrollable) (scrollable as HTMLElement).scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  // 👇 Subir arriba cuando cambia la ruta
   useEffect(() => {
     scrollToTop();
   }, [pathname]);
 
-  // 👇 Función más robusta para subir arriba
-  const scrollToTop = () => {
-    // soporta todos los navegadores
-    document.body.scrollTop = 0; // Safari
-    document.documentElement.scrollTop = 0; // Chrome, Firefox, Edge
-  };
-
-  // 👇 Clic en icono: siempre sube arriba y navega
+  // 👇 Siempre sube arriba al hacer clic en un icono
   const handleNavClick = (path: string) => {
-    console.log("AQUI"); // se verá SIEMPRE
     scrollToTop();
     navigate(path);
   };
