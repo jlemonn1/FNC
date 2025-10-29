@@ -22,7 +22,7 @@ export const Service = () => {
             titulo: "Interiores",
             descripcion:
               "Preparación de superficies, sellado y terminación prolija en livings, dormitorios y pasillos.",
-            imagen: "/assets/servicios/pintura/interiores.jpg",
+            imagen: "/images/servicios/pintura/interiores.png",
             icono: "🏠",
             enlace: "/servicios/pintura/interiores",
           },
@@ -40,7 +40,7 @@ export const Service = () => {
             titulo: "Decorativos",
             descripcion:
               "Efectos artísticos, microcemento fino, estuco y muros con paleta cálida.",
-            imagen: "/assets/servicios/pintura/decorativos.jpg",
+            imagen: "/images/servicios/pintura/decorativos.png",
             icono: "✨",
             enlace: "/servicios/pintura/decorativos",
           },
@@ -59,7 +59,7 @@ export const Service = () => {
             titulo: "Fabricación a medida",
             descripcion:
               "Armarios, alacenas, muebles TV y estanterías adaptadas a tu espacio.",
-            imagen: "/assets/servicios/carpinteria/fabricacion.jpg",
+            imagen: "/images/servicios/carpinteria/fabricacion.png",
             icono: "🪚",
             enlace: "/servicios/carpinteria/fabricacion",
           },
@@ -68,7 +68,7 @@ export const Service = () => {
             titulo: "Montaje e instalación",
             descripcion:
               "Puertas, zócalos, tarimas y herrajes con precisión y limpieza.",
-            imagen: "/assets/servicios/carpinteria/montaje.jpg",
+            imagen: "/images/servicios/carpinteria/montaje.png",
             icono: "🔧",
             enlace: "/servicios/carpinteria/montaje",
           },
