@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   height: 68px;
-  background-color: #ffffff;
+  background-color: #fff;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
   display: flex;
   justify-content: space-around;
@@ -13,24 +13,30 @@
   border-top-right-radius: 8px;
   z-index: 50;
   padding-bottom: env(safe-area-inset-bottom);
+  touch-action: manipulation;
 }
 
 .nav-item {
   color: #9c8c7f;
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-width: 64px;
+  min-height: 48px;
   transition: color 0.2s ease, transform 0.2s ease;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-icon {
   font-size: 1.4rem;
+  line-height: 1;
 }
 
-/* 🔸 Línea entre icono y texto */
+/* Indicador */
 .nav-indicator {
   width: 24px;
   height: 2.5px;
@@ -40,7 +46,7 @@
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-/* Estado activo */
+/* Activo */
 .nav-item.active,
 .nav-item[aria-current="page"] {
   color: #c76a3e;
@@ -53,22 +59,32 @@
   transform: scaleX(1);
 }
 
-/* Estado inactivo */
+/* Inactivo */
 .nav-item .nav-indicator {
   transform: scaleX(0);
-  background-color: transparent;
 }
 
-/* Hover feedback */
-.nav-item:hover {
+/* Hover y foco */
+.nav-item:hover,
+.nav-item:focus-visible {
   color: #c76a3e;
   transform: translateY(-2px);
+  outline: none;
 }
 
+/* Animaciones reducidas */
+@media (prefers-reduced-motion: reduce) {
+  .nav-item,
+  .nav-indicator {
+    transition: none;
+  }
+}
+
+/* Tablet / escritorio */
 @media (min-width: 768px) {
   .navbar {
     height: 72px;
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
     border-radius: 12px 12px 0 0;
   }
