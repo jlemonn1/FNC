@@ -31,7 +31,7 @@ export const Service = () => {
             titulo: "Exteriores",
             descripcion:
               "Tratamientos para clima, restauración de fachadas e impermeabilización con color duradero.",
-            imagen: "/assets/servicios/pintura/exteriores.jpg",
+            imagen: "/images/servicios/pintura/exteriores.png",
             icono: "🏡",
             enlace: "/servicios/pintura/exteriores",
           },
@@ -77,7 +77,7 @@ export const Service = () => {
             titulo: "Reparaciones y mantenimiento",
             descripcion:
               "Ajustes, bisagras, cajones y restauraciones de muebles.",
-            imagen: "/assets/servicios/carpinteria/reparaciones.jpg",
+            imagen: "/images/servicios/carpinteria/reparaciones.png",
             icono: "🪵",
             enlace: "/servicios/carpinteria/reparaciones",
           },
@@ -96,7 +96,7 @@ export const Service = () => {
             titulo: "Grietas y fisuras",
             descripcion:
               "Apertura, malla, sellado y masilla para reparaciones invisibles.",
-            imagen: "/assets/servicios/reparaciones/grietas.jpg",
+            imagen: "/images/servicios/reparaciones/grietas.png",
             icono: "🧱",
             enlace: "/servicios/reparaciones/grietas",
           },
@@ -105,7 +105,7 @@ export const Service = () => {
             titulo: "Humedades y filtraciones",
             descripcion:
               "Tratamientos antihumedad, barreras impermeables y repintado total.",
-            imagen: "/assets/servicios/reparaciones/humedades.jpg",
+            imagen: "/images/servicios/reparaciones/humedades.png",
             icono: "💧",
             enlace: "/servicios/reparaciones/humedades",
           },
@@ -114,7 +114,7 @@ export const Service = () => {
             titulo: "Acabados y revestimientos",
             descripcion:
               "Terminaciones finales, revoques finos, pinturas y selladores.",
-            imagen: "/assets/servicios/reparaciones/acabados.jpg",
+            imagen: "/images/servicios/reparaciones/acabados.png",
             icono: "🎨",
             enlace: "/servicios/reparaciones/acabados",
           },

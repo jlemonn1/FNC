@@ -5,16 +5,16 @@ export const serviciosData = [
         subcategorias: [
             {
                 id: "interiores",
-                nombre: "Interiores",
+                nombre: "Pintura de interiores",
                 icono: "🏠",
                 descripcion:
-                    "Preparación de superficies, sellado y terminación prolija en livings, dormitorios y pasillos.",
-                imagen: "/assets/servicios/pintura/interiores.jpg",
+                    "Preparación de superficies, sellado y acabado profesional en salones, dormitorios y pasillos.",
+                imagen: "/images/servicios/pintura/interiores.png",
                 incluye: {
-                    descripcion: "Servicio completo con materiales y protección del espacio.",
+                    descripcion: "Servicio completo con materiales de primera calidad y protección total del espacio.",
                     items: [
-                        { label: "Ambientes", value: "Living, dormitorios" },
-                        { label: "Acabado", value: "Mate / Satinado" },
+                        { label: "Estancias", value: "Salón, dormitorios, pasillos" },
+                        { label: "Acabado", value: "Mate o satinado" },
                         { label: "Tiempo estimado", value: "1–3 días" },
                         { label: "Garantía", value: "12 meses" },
                     ],
@@ -24,82 +24,41 @@ export const serviciosData = [
                         icono: "🛡️",
                         titulo: "Protección y preparación",
                         descripcion:
-                            "Cubrimos muebles y suelos, retiramos imperfecciones, sellamos con fijador y reparamos zonas dañadas para una base perfecta.",
+                            "Protegemos suelos y mobiliario, corregimos imperfecciones y aplicamos sellador para garantizar una base uniforme.",
                         incluido: true,
                     },
                     {
                         icono: "🎨",
                         titulo: "Aplicación de pintura",
                         descripcion:
-                            "Dos manos con pintura de baja emisión, cortes prolijos en esquinas y uniformidad de color en muros y cielos.",
+                            "Aplicamos dos manos con pintura ecológica de alta cobertura, cuidando los acabados y la homogeneidad del color.",
                         incluido: true,
                     },
                     {
                         icono: "✨",
                         titulo: "Limpieza y entrega",
                         descripcion:
-                            "Retiro de protecciones, limpieza del área y revisión final junto a ti para asegurar el resultado.",
+                            "Retiramos las protecciones, limpiamos la zona y realizamos una revisión final contigo para asegurar el mejor resultado.",
                         incluido: true,
                     },
                 ],
                 galeria: [
-                    "/assets/servicios/pintura/interior1.jpg",
-                    "/assets/servicios/pintura/interior2.jpg",
-                    "/assets/servicios/pintura/interior3.jpg",
+                    "/images/servicios/pintura/interior1.jpg",
+                    "/images/servicios/pintura/interior2.jpg",
+                    "/images/servicios/pintura/interior3.jpg",
+                    "/images/servicios/pintura/interior4.jpg",
+                    "/images/servicios/pintura/interior5.jpg",
+                    "/images/servicios/pintura/interior6.jpg",
                 ],
-            },
-            {
-                id: "exteriores",
-                nombre: "Exteriores",
-                icono: "🏡",
-                descripcion:
-                    "Pintura de fachadas, muros y terrazas con materiales impermeables y resistentes al clima.",
-                imagen: "/assets/servicios/pintura/exteriores.jpg",
-                incluye: {
-                    descripcion:
-                        "Revestimientos elásticos, sellado de grietas y protección UV para un acabado duradero.",
-                    items: [
-                        { label: "Superficies", value: "Fachadas, terrazas, muros" },
-                        { label: "Acabado", value: "Revestimiento elástico / Piedra" },
-                        { label: "Tiempo estimado", value: "3–5 días" },
-                        { label: "Garantía", value: "24 meses" },
-                    ],
-                },
-                proceso: [
-                    {
-                        icono: "🧱",
-                        titulo: "Limpieza y preparación",
-                        descripcion:
-                            "Retiramos polvo, hongos y pinturas viejas para garantizar adherencia.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "🌤️",
-                        titulo: "Revestimiento exterior",
-                        descripcion:
-                            "Aplicación de pintura o revestimiento impermeable en dos capas con sellado UV.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "🧹",
-                        titulo: "Entrega y revisión",
-                        descripcion:
-                            "Limpieza del área, comprobación de juntas y verificación del acabado.",
-                        incluido: true,
-                    },
-                ],
-                galeria: [
-                    "/assets/servicios/pintura/exterior1.jpg",
-                    "/assets/servicios/pintura/exterior2.jpg",
-                ],
-            },
+            }
+            ,
             {
                 id: "decorativos",
                 nombre: "Decorativos",
                 icono: "✨",
                 descripcion:
                     "Efectos de textura, microcemento fino, estuco veneciano y muros artísticos.",
-                imagen: "/assets/servicios/pintura/decorativos.jpg",
+                imagen: "/images/servicios/pintura/decorativos.png",
                 incluye: {
                     descripcion:
                         "Diseños personalizados para muros y acabados con alto impacto visual.",
@@ -127,8 +86,10 @@ export const serviciosData = [
                     },
                 ],
                 galeria: [
-                    "/assets/servicios/pintura/decorativo1.jpg",
-                    "/assets/servicios/pintura/decorativo2.jpg",
+                    "/images/servicios/pintura/decorativos1.jpg",
+                    "/images/servicios/pintura/decorativos2.jpg",
+                    "/images/servicios/pintura/decorativos3.jpg",
+                    "/images/servicios/pintura/decorativos4.jpg",
                 ],
             },
         ],
@@ -144,7 +105,7 @@ export const serviciosData = [
                 icono: "🪛",
                 descripcion:
                     "Instalación profesional de muebles, puertas, rodapiés y estructuras de madera o melamina con nivelado y acabados prolijos.",
-                imagen: "/assets/servicios/carpinteria/montaje-instalacion.jpg",
+                imagen: "/images/servicios/carpinteria/montaje-instalacion.png",
                 incluye: {
                     descripcion:
                         "Montaje con herramientas profesionales, fijaciones seguras y limpieza final del área.",
@@ -191,7 +152,7 @@ export const serviciosData = [
                 icono: "🪵",
                 descripcion:
                     "Diseño y fabricación de muebles personalizados adaptados a tus medidas y estilo.",
-                imagen: "/assets/servicios/carpinteria/fabricacion.jpg",
+                imagen: "/images/servicios/carpinteria/fabricacion.png",
                 incluye: {
                     descripcion:
                         "Materiales de alta calidad y acabados duraderos con instalación incluida.",
@@ -226,205 +187,65 @@ export const serviciosData = [
                     },
                 ],
                 galeria: [
-                    "/assets/servicios/carpinteria/fabricacion1.jpg",
-                    "/assets/servicios/carpinteria/fabricacion2.jpg",
-                    "/assets/servicios/carpinteria/fabricacion3.jpg",
+                    "/images/servicios/carpinteria/fabricacion1.jpg",
+                    "/images/servicios/carpinteria/fabricacion2.jpg",
+                    "/images/servicios/carpinteria/fabricacion3.jpg",
+                    "/images/servicios/carpinteria/fabricacion4.jpg",
+                    "/images/servicios/carpinteria/fabricacion5.jpg",
                 ],
             },
-
             {
-                id: "reparaciones",
-                nombre: "Reparaciones y ajustes",
-                icono: "🔧",
+                id: "montaje",
+                nombre: "Montaje y colocación",
+                icono: "🧰",
                 descripcion:
-                    "Solución de problemas comunes en carpintería: bisagras flojas, hinchazones, roturas o deformaciones.",
-                imagen: "/assets/servicios/carpinteria/reparaciones.jpg",
+                    "Instalación y montaje profesional de tarimas, cocinas, baños, armarios y rodapiés, con acabados precisos y duraderos.",
+                imagen: "/images/servicios/carpinteria/montaje.png",
                 incluye: {
-                    descripcion:
-                        "Atención rápida y precisa para extender la vida útil de tus muebles o estructuras.",
+                    descripcion: "Montaje completo con herramientas profesionales y materiales de calidad.",
                     items: [
-                        { label: "Tipo de reparación", value: "Puertas, armarios, muebles" },
-                        { label: "Tiempo estimado", value: "1 día" },
-                        { label: "Garantía", value: "6 meses" },
-                        { label: "Materiales", value: "Incluidos según tipo de reparación" },
+                        { label: "Trabajos habituales", value: "Tarimas, cocinas, baños, armarios, rodapiés" },
+                        { label: "Acabado", value: "Preciso y limpio, sin restos ni imperfecciones" },
+                        { label: "Tiempo estimado", value: "Según superficie y tipo de instalación" },
                     ],
                 },
                 proceso: [
                     {
-                        icono: "🔍",
-                        titulo: "Diagnóstico",
+                        icono: "📏",
+                        titulo: "Medición y planificación",
                         descripcion:
-                            "Evaluamos el daño y definimos si requiere ajuste, reemplazo o refuerzo.",
+                            "Revisamos el espacio, nivelamos superficies y planificamos el montaje para garantizar un encaje perfecto.",
                         incluido: true,
                     },
                     {
                         icono: "🪚",
-                        titulo: "Reparación",
+                        titulo: "Instalación y ajuste",
                         descripcion:
-                            "Desmontaje parcial, ajuste de piezas o reemplazo con materiales equivalentes.",
+                            "Montamos cada pieza con precisión, cuidando la alineación, los remates y el sellado en juntas o esquinas.",
                         incluido: true,
                     },
                     {
                         icono: "🧼",
-                        titulo: "Finalización y limpieza",
+                        titulo: "Revisión y limpieza",
                         descripcion:
-                            "Comprobación del funcionamiento y limpieza del área intervenida.",
+                            "Comprobamos el funcionamiento y la estabilidad de cada elemento, retiramos restos y dejamos el área lista para su uso.",
                         incluido: true,
                     },
                 ],
                 galeria: [
-                    "/assets/servicios/carpinteria/reparacion1.jpg",
-                    "/assets/servicios/carpinteria/reparacion2.jpg",
+                    "/images/servicios/carpinteria/montaje1.jpg",
+                    "/images/servicios/carpinteria/montaje2.jpg",
+                    "/images/servicios/carpinteria/montaje3.jpg",
+                    "/images/servicios/carpinteria/montaje4.jpg",
+                    "/images/servicios/carpinteria/montaje5.jpg",
+                    "/images/servicios/carpinteria/montaje6.jpg",
                 ],
-            },
+            }
+
+            ,
         ],
     },
-    {
-        categoriaId: "reparaciones",
-        categoriaNombre: "Reparaciones de techos y paredes",
-        subcategorias: [
-            {
-                id: "grietas-fisuras",
-                nombre: "Grietas y fisuras",
-                icono: "🧱",
-                descripcion:
-                    "Reparación de grietas, fisuras y desprendimientos en paredes y techos para evitar filtraciones o daños estructurales.",
-                imagen: "/assets/servicios/reparaciones/grietas-fisuras.jpg",
-                incluye: {
-                    descripcion:
-                        "Refuerzo y sellado profesional con masillas y mallas de fibra para asegurar un acabado duradero.",
-                    items: [
-                        { label: "Superficies", value: "Paredes y techos interiores" },
-                        { label: "Materiales", value: "Masillas, mallas, selladores" },
-                        { label: "Tiempo estimado", value: "1–2 días" },
-                        { label: "Garantía", value: "12 meses" },
-                    ],
-                },
-                proceso: [
-                    {
-                        icono: "🔎",
-                        titulo: "Evaluación y limpieza",
-                        descripcion:
-                            "Identificamos el tipo de fisura y preparamos la superficie eliminando polvo y restos sueltos.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "🪚",
-                        titulo: "Sellado y refuerzo",
-                        descripcion:
-                            "Aplicamos masilla reforzada con malla y nivelamos la superficie para una base uniforme.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "🎨",
-                        titulo: "Acabado final",
-                        descripcion:
-                            "Lijado, imprimación y repintado para que el área quede como nueva.",
-                        incluido: true,
-                    },
-                ],
-                galeria: [
-                    "/assets/servicios/reparaciones/grietas1.jpg",
-                    "/assets/servicios/reparaciones/grietas2.jpg",
-                    "/assets/servicios/reparaciones/grietas3.jpg",
-                ],
-            },
-
-            {
-                id: "humedades-filtraciones",
-                nombre: "Humedades y filtraciones",
-                icono: "💧",
-                descripcion:
-                    "Tratamiento de humedad por condensación, capilaridad o filtraciones con productos específicos impermeabilizantes.",
-                imagen: "/assets/servicios/reparaciones/humedades-filtraciones.jpg",
-                incluye: {
-                    descripcion:
-                        "Reparación de origen, secado, sellado y protección con productos antihumedad de alta eficacia.",
-                    items: [
-                        { label: "Causas tratadas", value: "Filtraciones, condensación, capilaridad" },
-                        { label: "Materiales", value: "Resinas, morteros impermeables" },
-                        { label: "Tiempo estimado", value: "2–4 días" },
-                        { label: "Garantía", value: "24 meses" },
-                    ],
-                },
-                proceso: [
-                    {
-                        icono: "🔍",
-                        titulo: "Diagnóstico de origen",
-                        descripcion:
-                            "Detectamos la fuente de humedad (filtración, condensación o capilaridad).",
-                        incluido: true,
-                    },
-                    {
-                        icono: "💦",
-                        titulo: "Secado y sellado",
-                        descripcion:
-                            "Secado completo del área y aplicación de selladores o morteros impermeables.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "🏠",
-                        titulo: "Protección final",
-                        descripcion:
-                            "Aplicación de pintura transpirable o revestimiento protector antihumedad.",
-                        incluido: true,
-                    },
-                ],
-                galeria: [
-                    "/assets/servicios/reparaciones/humedad1.jpg",
-                    "/assets/servicios/reparaciones/humedad2.jpg",
-                    "/assets/servicios/reparaciones/humedad3.jpg",
-                ],
-            },
-
-            {
-                id: "acabados-revestimientos",
-                nombre: "Acabados y revestimientos",
-                icono: "🎨",
-                descripcion:
-                    "Aplicación de revestimientos decorativos o técnicos en techos y paredes para renovar el aspecto y mejorar la protección.",
-                imagen: "/assets/servicios/reparaciones/acabados-revestimientos.jpg",
-                incluye: {
-                    descripcion:
-                        "Acabados lisos, texturados o impermeables según el tipo de espacio y estilo deseado.",
-                    items: [
-                        { label: "Tipos", value: "Liso, estuco, microcemento, piedra" },
-                        { label: "Tiempo estimado", value: "2–5 días" },
-                        { label: "Garantía", value: "12 meses" },
-                        { label: "Aplicaciones", value: "Baños, cocinas, fachadas" },
-                    ],
-                },
-                proceso: [
-                    {
-                        icono: "🧱",
-                        titulo: "Preparación del soporte",
-                        descripcion:
-                            "Revisión de superficie, reparación de juntas y limpieza para una correcta adherencia.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "🎨",
-                        titulo: "Aplicación del revestimiento",
-                        descripcion:
-                            "Aplicamos el revestimiento seleccionado con herramientas y técnicas adecuadas.",
-                        incluido: true,
-                    },
-                    {
-                        icono: "✨",
-                        titulo: "Sellado y acabado final",
-                        descripcion:
-                            "Protegemos el acabado con barnices o selladores según el tipo de revestimiento.",
-                        incluido: true,
-                    },
-                ],
-                galeria: [
-                    "/assets/servicios/reparaciones/acabado1.jpg",
-                    "/assets/servicios/reparaciones/acabado2.jpg",
-                    "/assets/servicios/reparaciones/acabado3.jpg",
-                ],
-            },
-        ],
-    }
+    
 
 
 
