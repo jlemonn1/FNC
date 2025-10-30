@@ -12,8 +12,8 @@ interface HeroCTAProps {
 
 export const HeroCTA = ({
   title = "FNC Pintura y Reparaciones",
-  subtitle = "Interiores, exteriores y carpintería con acabados duraderos y estilo artesanal.",
-  tagline = "Transformamos tus espacios con precisión y calidez.",
+  subtitle = "Interiores, exteriores y montaje de mobiliario a medida",
+  tagline = "Transformamos tus espacios con calidad y precision.",
   backgroundSrc = "/images/hero/home-hero.png", // ✅ ruta desde /public
   primaryCta = {
     label: "Contactar por WhatsApp",
