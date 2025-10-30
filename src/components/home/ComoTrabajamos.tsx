@@ -28,7 +28,7 @@ export const ComoTrabajamos = () => {
       </div>
 
       <a
-        href="https://wa.me/34XXXXXXXXX?text=Hola!%20Quiero%20pedir%20presupuesto"
+        href="https://wa.me/34642848354?text=Hola!%20Quiero%20pedir%20presupuesto"
         target="_blank"
         rel="noopener noreferrer"
         className="btn-whatsapp"

@@ -11,7 +11,7 @@ export default function ResultadoIA({ imageUrl, onRetry }: Props) {
     const text = encodeURIComponent(
       "Mira esta imagen generada por IA 🔥\n\n" + imageUrl
     );
-    window.open(`https://wa.me/?text=${text}`, "_blank");
+    window.open(`https://wa.me/34642848354/?text=${text}`, "_blank");
   };
 
   return (

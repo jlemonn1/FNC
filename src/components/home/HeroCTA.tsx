@@ -17,7 +17,7 @@ export const HeroCTA = ({
   backgroundSrc = "/images/hero/home-hero.png", // ✅ ruta desde /public
   primaryCta = {
     label: "Contactar por WhatsApp",
-    href: "https://wa.me/",
+    href: "https://wa.me/34642848354",
   },
   secondaryCta = { label: "Ver servicios", href: "/servicios" },
 }: HeroCTAProps) => {

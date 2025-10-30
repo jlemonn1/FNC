@@ -13,7 +13,7 @@ interface NavItem {
 
 export const Navbar = () => {
   const navItems: NavItem[] = [
-    { id: "home", label: "Inicio", icon: <Home size={22} />, path: "/" },
+    { id: "home", label: "Home", icon: <Home size={22} />, path: "/" },
     { id: "servicios", label: "Servicios", icon: <Hammer size={22} />, path: "/servicios" },
     { id: "studioIA", label: "Studio IA", icon: <Sparkles size={22} />, path: "/studio-ia" },
   ];
@@ -21,33 +21,46 @@ export const Navbar = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
+  // 🔹 Función universal para subir arriba en cualquier layout
   const scrollToTop = () => {
+    // 1️⃣ Intenta hacer scroll en window
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // 2️⃣ Fuerza scroll en document (por compatibilidad)
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
+    // 3️⃣ Busca cualquier contenedor que esté scrolleando
+    const scrollable = Array.from(document.querySelectorAll("*")).find(
+      (el) => el.scrollHeight > el.clientHeight && getComputedStyle(el).overflowY !== "visible"
+    );
+    if (scrollable) (scrollable as HTMLElement).scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  // 👇 Subir arriba cuando cambia la ruta
   useEffect(() => {
     scrollToTop();
   }, [pathname]);
 
+  // 👇 Siempre sube arriba al hacer clic en un icono
   const handleNavClick = (path: string) => {
     scrollToTop();
     navigate(path);
   };
 
   return (
-    <nav className="navbar" role="navigation" aria-label="Navegación principal">
+    <nav className="navbar">
       {navItems.map((item) => (
-        <button
+        <div
           key={item.id}
           className={`nav-item ${pathname === item.path ? "active" : ""}`}
           onClick={() => handleNavClick(item.path)}
           aria-label={`Ir a ${item.label}`}
-          aria-current={pathname === item.path ? "page" : undefined}
         >
           <div className="nav-icon">{item.icon}</div>
           <div className="nav-indicator" />
           <span className="nav-label">{item.label}</span>
-        </button>
+        </div>
       ))}
     </nav>
   );

@@ -11,7 +11,7 @@ interface DetalleCTAProps {
 export const DetalleCTA = ({
   titulo = "¿Quieres tu presupuesto sin compromiso?",
   subtitulo = "Cuéntanos tu idea y te asesoramos personalmente.",
-  whatsappHref = "https://wa.me/34600123456?text=Hola!%20Quiero%20pedir%20presupuesto",
+  whatsappHref = "https://wa.me/34642848354?text=Hola!%20Quiero%20pedir%20presupuesto",
   label = "Contactar por WhatsApp",
 }: DetalleCTAProps) => {
   return (

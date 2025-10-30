@@ -16,11 +16,12 @@ export const HeroServicios = ({
   backgroundSrc = "/images/hero/servicios-hero.png",
   primaryCta = {
     label: "Solicitar presupuesto",
-    href: "https://wa.me/34600123456?text=Hola!%20Quiero%20un%20presupuesto",
+    href: "https://wa.me/34642848354?text=Hola!%20Quiero%20un%20presupuesto",
   },
   secondaryCta = {
     label: "Ver proyectos",
     href: "/proyectos",
+    
   },
 }: HeroServiciosProps) => {
   return (

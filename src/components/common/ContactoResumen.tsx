@@ -13,11 +13,11 @@ export const ContactoResumen = () => {
       <div className="contacto-grid">
         <div className="contacto-item">
           <Phone size={22} />
-          <span>+34 600 123 456</span>
+          <span>+34 642 84 83 54</span>
         </div>
         <div className="contacto-item">
           <Mail size={22} />
-          <span>contacto@fnc.com</span>
+          <span>ninahuancaedwin1@gmail.com</span>
         </div>
         <div className="contacto-item">
           <MapPin size={22} />
@@ -30,7 +30,7 @@ export const ContactoResumen = () => {
       </div>
 
       <a
-        href="https://wa.me/34600123456?text=Hola!%20Quiero%20pedir%20presupuesto"
+        href="https://wa.me/34642848354?text=Hola!%20Quiero%20pedir%20presupuesto"
         target="_blank"
         rel="noopener noreferrer"
         className="btn-whatsapp-contacto"
