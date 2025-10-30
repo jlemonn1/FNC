@@ -10,24 +10,24 @@ interface Opinion {
 export const OpinionesPreview = () => {
   const opiniones: Opinion[] = [
     {
-      nombre: "María R.",
+      nombre: "Javier M.",
       foto: "/images/opiniones/1.jpg",
       texto:
-        "Excelente trabajo, muy prolijos. El living quedó como nuevo y cumplieron los plazos.",
+        "Buen trabajo, muy responsables y cuidadosos, las puertas renovadas y los armarios bien presentados os recomiendo",
       estrellas: 5,
     },
     {
-      nombre: "Javier M.",
+      nombre: "María R.",
       foto: "/images/opiniones/2.jpg",
       texto:
-        "Paredes reparadas y pintadas con mucha dedicación. Muy buena atención y carpintería impecable.",
+        "He quedado muy contenta y agradecida. el pintado del piso excelente, previamente muy bien protegidos los ambientes. Se nota la experiencia y la seriedad",
       estrellas: 5,
     },
     {
       nombre: "Laura P.",
-      foto: "/images/opiniones/3.jpg",
+      foto: "/images/opiniones/4.jpg",
       texto:
-        "Profesionales y detallistas. Los llamaría nuevamente sin dudarlo.",
+        "Profesionales y detallistas. Los llamaría nuevamente sin dudarlo. Nos encanto a toda la familia",
       estrellas: 4,
     },
   ];
