@@ -11,8 +11,8 @@ interface HeroCTAProps {
 }
 
 export const HeroCTA = ({
-  title = "FNC Pintura y Reparaciones",
-  subtitle = "Interiores, exteriores y montaje de mobiliario a medida",
+  title = "ENC Pintura y Reparaciones",
+  subtitle = "Pintura de interiores y exteriores, montaje de mobiliario, servicio de manitas y carpintería en general.",
   tagline = "Transformamos tus espacios con calidad y precision.",
   backgroundSrc = "/images/hero/home-hero.png", // ✅ ruta desde /public
   primaryCta = {
