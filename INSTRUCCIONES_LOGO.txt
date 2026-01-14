@@ -1,0 +1,59 @@
+═══════════════════════════════════════════════════════════════
+  📸 INSTRUCCIONES RÁPIDAS PARA SUBIR TU LOGO
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Prepara las imágenes
+───────────────────────────────────────────────────────────────
+Necesitas crear estos archivos desde tu logo:
+
+✅ favicon-16x16.png (16x16 píxeles)
+✅ favicon-32x32.png (32x32 píxeles)  
+✅ apple-touch-icon.png (180x180 píxeles)
+✅ android-chrome-192x192.png (192x192 píxeles)
+✅ android-chrome-512x512.png (512x512 píxeles)
+✅ og-image.png (1200x630 píxeles) ← MUY IMPORTANTE para Google y redes sociales
+
+PASO 2: Genera las imágenes fácilmente
+───────────────────────────────────────────────────────────────
+Opción más fácil:
+1. Ve a: https://realfavicongenerator.net/
+2. Sube tu logo
+3. Descarga el paquete completo
+4. Copia los archivos .png a la carpeta public/
+
+Para og-image.png:
+- Usa Canva o cualquier editor
+- Crea una imagen de 1200x630 píxeles
+- Incluye tu logo y texto "ENC Reformas"
+- Guárdala como og-image.png en la carpeta public/
+
+PASO 3: Coloca los archivos
+───────────────────────────────────────────────────────────────
+Copia TODOS los archivos .png a esta carpeta:
+   📁 public/
+
+La estructura debe quedar así:
+   public/
+   ├── favicon-16x16.png
+   ├── favicon-32x32.png
+   ├── apple-touch-icon.png
+   ├── android-chrome-192x192.png
+   ├── android-chrome-512x512.png
+   └── og-image.png
+
+PASO 4: Verifica
+───────────────────────────────────────────────────────────────
+1. Ejecuta: npm run dev
+2. Abre http://localhost:5173
+3. Deberías ver tu logo en la pestaña del navegador
+
+PASO 5: Despliega
+───────────────────────────────────────────────────────────────
+1. Ejecuta: npm run build
+2. Sube los cambios a producción
+3. Espera 24-48 horas para que Google actualice
+
+═══════════════════════════════════════════════════════════════
+  ✅ ¡Ya está todo configurado! Solo falta subir las imágenes
+═══════════════════════════════════════════════════════════════
+

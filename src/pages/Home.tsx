@@ -16,7 +16,7 @@ export const Home = () => {
       "ENC Reformas ofrece servicios profesionales de pintura, carpintería y reparaciones. Reformas integrales con garantía y acabados de calidad. Solicita tu presupuesto gratuito.",
     keywords: "reformas, pintura profesional, carpintería, reparaciones, presupuesto gratuito",
     url: "/",
-    image: "/images/servicios/pintura/cover.png",
+    image: "/og-image.png",
   });
 
   return (

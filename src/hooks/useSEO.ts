@@ -27,7 +27,7 @@ export const useSEO = ({
       description ||
       'Servicios profesionales de pintura, carpintería y reparaciones. Reformas integrales con garantía y acabados de calidad en toda España.';
     const fullUrl = url ? `${SITE_URL}${url}` : SITE_URL;
-    const fullImage = image ? `${SITE_URL}${image}` : `${SITE_URL}/images/servicios/pintura/cover.png`;
+    const fullImage = image ? `${SITE_URL}${image}` : `${SITE_URL}/og-image.png`;
 
     // Actualizar título
     document.title = fullTitle;

@@ -28,7 +28,7 @@ export const HeroServicios = ({
     <section
       className="hero-servicios"
       style={{ backgroundImage: `url(${backgroundSrc})` }}
-      aria-label="Encabezado principal de Servicios FNC"
+      aria-label="Encabezado principal de Servicios ENC Reformas"
     >
       <div className="hero-overlay" />
       <div className="hero-content">
