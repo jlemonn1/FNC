@@ -1,0 +1,13 @@
+# robots.txt para enc-reformas.es
+
+User-agent: *
+Allow: /
+
+# Bloquear acceso a archivos de sistema
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Especificar ubicación del sitemap
+Sitemap: https://enc-reformas.es/sitemap.xml
+

@@ -5,8 +5,17 @@ import IdeaPrompt from "../components/studioIA/IdeaPrompt";
 import ImagenUploader from "../components/studioIA/ImagenUploader";
 import GenerarBoton from "../components/studioIA/GenerarBoton";
 import { Navbar } from "../components/common/Navbar";
+import { useSEO } from "../hooks/useSEO";
 
 export default function StudioIA() {
+    useSEO({
+        title: "Studio IA - Generador de Ideas",
+        description:
+            "Genera ideas visuales para tus proyectos de reforma con inteligencia artificial. Visualiza antes de empezar tu proyecto de pintura o carpintería.",
+        keywords: "generador IA, visualización reformas, ideas pintura, ideas carpintería, diseño virtual",
+        url: "/studio-ia",
+        image: "/images/ia/antes.png",
+    });
     // 👉 Modo de negocio/UI (no IA): pintura | carpinteria
     const [mode, setMode] = useState<"pintura" | "carpinteria">("pintura");
     const [prompt, setPrompt] = useState("");

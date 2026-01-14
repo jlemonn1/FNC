@@ -4,8 +4,18 @@ import { ContactoResumen } from "../components/common/ContactoResumen";
 import { OpinionesPreview } from "../components/common/OpinionesPreview";
 import { CategoriaServicio } from "../components/servicios/CategoriaServicio";
 import { HeroServicios } from "../components/servicios/HeroServicios";
+import { useSEO } from "../hooks/useSEO";
 
 export const Service = () => {
+  useSEO({
+    title: "Servicios",
+    description:
+      "Descubre nuestros servicios de pintura profesional, carpintería a medida y reparaciones. Trabajos garantizados con materiales de primera calidad.",
+    keywords: "servicios reformas, pintura interiores exteriores, carpintería a medida, reparaciones, montaje",
+    url: "/servicios",
+    image: "/images/servicios/pintura/cover.png",
+  });
+
   return (
     <>
       {/* Hero principal */}
