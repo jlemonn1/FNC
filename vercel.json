@@ -2,12 +2,6 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "fnc-reformas.es" }],
-      "destination": "https://fnc-reformas.es/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
       "has": [{ "type": "host", "value": "www.fnc-reformas.es" }],
       "destination": "https://fnc-reformas.es/:path*",
       "permanent": true
@@ -15,6 +9,12 @@
     {
       "source": "/:path*",
       "has": [{ "type": "host", "value": "fnc-reparaciones.vercel.app" }],
+      "destination": "https://fnc-reformas.es/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "enc-reformas.es" }],
       "destination": "https://fnc-reformas.es/:path*",
       "permanent": true
     }
