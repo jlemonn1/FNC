@@ -1,4 +1,4 @@
-# robots.txt para enc-reformas.es
+# robots.txt para fnc-reformas.es
 
 User-agent: *
 Allow: /
@@ -9,5 +9,5 @@ Disallow: /*.json$
 Disallow: /node_modules/
 
 # Especificar ubicación del sitemap
-Sitemap: https://enc-reformas.es/sitemap.xml
+Sitemap: https://fnc-reformas.es/sitemap.xml
 

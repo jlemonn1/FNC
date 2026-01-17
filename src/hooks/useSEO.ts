@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const SITE_URL = 'https://enc-reformas.es';
+const SITE_URL = 'https://fnc-reformas.es';
 
 interface SEOProps {
   title?: string;
@@ -21,8 +21,8 @@ export const useSEO = ({
 }: SEOProps) => {
   useEffect(() => {
     const fullTitle = title
-      ? `${title} | ENC Reformas - Reformas y Reparaciones Profesionales`
-      : 'ENC Reformas - Reformas y Reparaciones Profesionales';
+      ? `${title} | FNC Reformas - Reformas y Reparaciones Profesionales`
+      : 'FNC Reformas - Reformas y Reparaciones Profesionales';
     const fullDescription =
       description ||
       'Servicios profesionales de pintura, carpintería y reparaciones. Reformas integrales con garantía y acabados de calidad en toda España.';
@@ -55,7 +55,7 @@ export const useSEO = ({
     updateMetaTag('og:image', fullImage, 'property');
     updateMetaTag('og:url', fullUrl, 'property');
     updateMetaTag('og:type', type, 'property');
-    updateMetaTag('og:site_name', 'ENC Reformas', 'property');
+    updateMetaTag('og:site_name', 'FNC Reformas', 'property');
 
     // Twitter Card tags
     updateMetaTag('twitter:card', 'summary_large_image');

@@ -24,7 +24,7 @@ Opción más fácil:
 Para og-image.png:
 - Usa Canva o cualquier editor
 - Crea una imagen de 1200x630 píxeles
-- Incluye tu logo y texto "ENC Reformas"
+- Incluye tu logo y texto "FNC Reformas"
 - Guárdala como og-image.png en la carpeta public/
 
 PASO 3: Coloca los archivos

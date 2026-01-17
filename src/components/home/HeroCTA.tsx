@@ -11,7 +11,7 @@ interface HeroCTAProps {
 }
 
 export const HeroCTA = ({
-  title = "ENC Reformas",
+  title = "FNC Reformas",
   subtitle = "Pintura de interiores y exteriores, montaje de mobiliario, servicio de manitas y carpintería en general.",
   tagline = "Transformamos tus espacios con calidad y precision.",
   backgroundSrc = "/images/hero/home-hero.png", // ✅ ruta desde /public
@@ -25,7 +25,7 @@ export const HeroCTA = ({
     <section
       className="hero"
       style={{ backgroundImage: `url(${backgroundSrc})` }}
-      aria-label="Encabezado principal de ENC Reformas"
+      aria-label="Encabezado principal de FNC Reformas"
     >
       <div className="hero-overlay" />
       <div className="hero-content">

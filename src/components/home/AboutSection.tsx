@@ -11,7 +11,7 @@ interface AboutSectionProps {
 export const AboutSection = ({
   imageSrc = "/assets/images/home/about-cover.jpg",
   title = "Sobre nosotros",
-  description = "En ENC Reformas somos especialistas en transformar hogares, oficinas y locales. Trabajamos con acabados duraderos y prolijos, cuidando cada detalle para que tu espacio se vea impecable y acogedor.",
+  description = "En FNC Reformas somos especialistas en transformar hogares, oficinas y locales. Trabajamos con acabados duraderos y prolijos, cuidando cada detalle para que tu espacio se vea impecable y acogedor.",
   tags = ["Interiores", "Exteriores", "Reparaciones", "Garantía de calidad"],
 }: AboutSectionProps) => {
   return (

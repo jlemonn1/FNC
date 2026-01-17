@@ -29,7 +29,7 @@ Para que tu logo aparezca correctamente en Google, redes sociales y como favicon
 - **Tamaño**: 1200x630 píxeles (proporción 1.91:1)
 - **Formato**: PNG o JPG
 - **Peso máximo**: 8MB (recomendado menos de 1MB)
-- **Contenido**: Debe incluir tu logo y texto "ENC Reformas" o similar
+- **Contenido**: Debe incluir tu logo y texto "FNC Reformas" o similar
 - **Importante**: Esta imagen aparecerá cuando compartas tu sitio en redes sociales
 
 ## 📁 Estructura de archivos
@@ -57,7 +57,7 @@ public/
 
 2. **Canva** o **Figma**:
    - Crea la imagen og-image.png de 1200x630px
-   - Incluye tu logo y texto "ENC Reformas"
+   - Incluye tu logo y texto "FNC Reformas"
 
 ### Opción 2: Photoshop/GIMP
 1. Abre tu logo
@@ -74,7 +74,7 @@ Una vez que subas los archivos:
 
 2. **Verifica Open Graph**:
    - Usa: https://developers.facebook.com/tools/debug/
-   - Ingresa: `https://enc-reformas.es`
+   - Ingresa: `https://fnc-reformas.es`
    - Deberías ver tu imagen og-image.png
 
 3. **Verifica en Google**:

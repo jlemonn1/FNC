@@ -5,7 +5,7 @@ import { dirname, resolve } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const SITE_URL = 'https://enc-reformas.es';
+const SITE_URL = 'https://fnc-reformas.es';
 
 // Leer el archivo de servicios
 const serviciosPath = resolve(__dirname, '../src/data/serviciosData.ts');

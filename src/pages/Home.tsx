@@ -13,7 +13,7 @@ export const Home = () => {
   useSEO({
     title: "Inicio",
     description:
-      "ENC Reformas ofrece servicios profesionales de pintura, carpintería y reparaciones. Reformas integrales con garantía y acabados de calidad. Solicita tu presupuesto gratuito.",
+      "FNC Reformas ofrece servicios profesionales de pintura, carpintería y reparaciones. Reformas integrales con garantía y acabados de calidad. Solicita tu presupuesto gratuito.",
     keywords: "reformas, pintura profesional, carpintería, reparaciones, presupuesto gratuito",
     url: "/",
     image: "/og-image.png",
